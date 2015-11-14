@@ -4,3 +4,4 @@
 /static/bundle.js*
 /static/*hot-update*
 *.pyc
+/media

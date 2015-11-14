@@ -21,6 +21,8 @@ class Base(Configuration):
 
     INSTALLED_APPS = (
         'drought.base',
+        'drought.adventures',
+        'rest_framework',
 
         'django.contrib.admin',
         'django.contrib.auth',
@@ -87,8 +89,19 @@ class Base(Configuration):
       os.path.join(BASE_DIR, "static"),
     ]
 
+    MEDIA_ROOT = path('media')
+    MEDIA_URL = '/media/'
+
     # Use https flag on session cookies?
     SESSION_COOKIE_SECURE = values.Value(True)
+
+    REST_FRAMEWORK = {
+        # Use Django's standard `django.contrib.auth` permissions,
+        # or allow read-only access for unauthenticated users.
+        'DEFAULT_PERMISSION_CLASSES': [
+            'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+        ]
+    }
 
 
 class Dev(Base):
