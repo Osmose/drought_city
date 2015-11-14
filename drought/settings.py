@@ -107,4 +107,4 @@ class Base(Configuration):
 class Dev(Base):
     SECRET_KEY = 'BUTTS'
     DEBUG = True
-    SESSION_COOKIE_SECURE = values.Value(False)
+    SESSION_COOKIE_SECURE = values.BooleanValue(False)
