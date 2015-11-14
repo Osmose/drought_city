@@ -8,7 +8,11 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
     url(r'', include('drought.adventures.urls')),
+]
 
-    # Must do this last because it has a catchall.
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# Must do this last because it has a catchall.
+urlpatterns += [
     url(r'', include('drought.base.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
