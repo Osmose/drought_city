@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,6 +8,7 @@
     <title>Drought City</title>
   </head>
   <body>
-    Butts
+    <div id="root"></div>
+    <script src="{% static "bundle.js" %}"></script>
   </body>
 </html>

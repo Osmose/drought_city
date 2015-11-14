@@ -7,5 +7,5 @@ urlpatterns = patterns(
     '',
 
     # Home
-    url(r'^$', views.index, name='drought.index'),
+    url(r'^.*$', views.index, name='drought.index'),
 )
