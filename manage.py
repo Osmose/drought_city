@@ -14,7 +14,7 @@ if __name__ == "__main__":
     dotenv.read_dotenv()
 
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "drought.settings")
-    os.environ.setdefault('DJANGO_CONFIGURATION', 'Base')
+    os.environ.setdefault('DJANGO_CONFIGURATION', 'Dev')
 
     from configurations.management import execute_from_command_line
 

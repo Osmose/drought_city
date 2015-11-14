@@ -84,3 +84,9 @@ class Base(Configuration):
 
     # Use https flag on session cookies?
     SESSION_COOKIE_SECURE = values.Value(True)
+
+
+class Dev(Base):
+    SECRET_KEY = 'BUTTS'
+    DEBUG = True
+    SESSION_COOKIE_SECURE = values.Value(False)
