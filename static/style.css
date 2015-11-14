@@ -50,6 +50,11 @@ table {
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 100;
+  background-color: #111;
+}
+
+.home {
+  background-color: #d9ff27;
 }
 
 /* 1000 x 562 */
@@ -62,9 +67,12 @@ body {
 }
 
 .wrapper {
+  width: 100%;
+}
+
+.game-wrapper {
   display: flex;
-  width: 1000px;
-  height: 562px;
+  border-top: 0;
 }
 
 h1 {
@@ -75,6 +83,7 @@ h1 {
 }
 
 header {
+  background-color: #3e3e3e;
   flex: 0 0 15%;
 }
 
@@ -84,12 +93,16 @@ header .character {
 
 .progress {
   color: #bcffed;
-  background-color: #23f9bf;
+  background-color: #3ac4e6;
   padding: 5px 5px 0 5px;
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 3px;
   line-height: 1.8rem;
+}
+
+.progress#mp {
+  background-color: #1fd8a2;
 }
 
 #playarea {

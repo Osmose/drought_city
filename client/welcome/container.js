@@ -15,7 +15,7 @@ export default class WelcomeApp extends Component {
     // const {} = bindActionCreators(actionCreators, dispatch);
 
     return (
-      <div>
+      <div className="home">
         <h1>Drought City</h1>
       </div>
     );
