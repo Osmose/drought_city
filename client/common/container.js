@@ -8,11 +8,21 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="wrapper">
         <header>
-          <Link to="/">Home</Link>{' '}
+          <section>
+            <img className="character" src="/static/assets/cat-protagonist-tabby.svg" />
+            <div id="hp" className="progress">
+              <span>HP: </span>
+              { /* progress bar */ }
+            </div>
+            <div id="mp" className="progress">
+              <span>MP: </span>
+              { /* progress bar */ }
+            </div>
+          </section>
         </header>
-        <div>
+        <div id="playarea">
           {this.props.children}
         </div>
       </div>
