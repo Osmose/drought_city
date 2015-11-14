@@ -20,6 +20,8 @@ class Base(Configuration):
     # Application definition
 
     INSTALLED_APPS = (
+        'drought.base',
+
         'django.contrib.admin',
         'django.contrib.auth',
         'django.contrib.contenttypes',
