@@ -1,4 +1,6 @@
-.env
-db.sqlite
-node_modules
+/.env
+/db.sqlite
+/node_modules
+/static/bundle.js*
+/static/*hot-update*
 *.pyc

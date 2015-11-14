@@ -26,7 +26,7 @@ $ npm install
 There are two parts to run, the client bundler (Webpack) and the server (Django). To run the server:
 
 ```bash
-$ python ./manage.py runserver
+python ./manage.py runserver
 ```
 
 to run the client bundler:
