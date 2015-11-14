@@ -49,6 +49,7 @@ table {
 
 body {
   font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
 }
 
 /* 1000 x 562 */
@@ -64,6 +65,13 @@ body {
   display: flex;
   width: 1000px;
   height: 562px;
+}
+
+h1 {
+  font-size: 1.1rem;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
 }
 
 header {
