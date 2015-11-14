@@ -14,7 +14,7 @@ class MapSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = models.Map
-        fields = ('width', 'height', 'background', 'map_items')
+        fields = ('name', 'width', 'height', 'background', 'map_items')
 
 
 class AdventureSerializer(serializers.HyperlinkedModelSerializer):

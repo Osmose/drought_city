@@ -1,6 +1,8 @@
 import React, {Component, PropTypes as pt} from 'react';
 import {Link} from 'react-router';
 
+import MapApp from '../map/container';
+
 export default class App extends Component {
   static propTypes = {
     children: pt.any.isRequired,
@@ -23,6 +25,7 @@ export default class App extends Component {
           </section>
         </header>
         <div id="playarea" className="level">
+          <MapApp/>
         </div>
       </div>
     );

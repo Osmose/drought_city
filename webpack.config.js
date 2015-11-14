@@ -6,7 +6,11 @@ var webpack = require('webpack');
 var entry = [
   './client/index',
 ];
-var plugins = [];
+var plugins = [
+  new webpack.ProvidePlugin({
+    'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
+  }),
+];
 
 if (process.env.NODE_ENV === 'production') {
   plugins = [
