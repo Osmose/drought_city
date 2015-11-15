@@ -25,13 +25,10 @@ if (process.env.NODE_ENV === 'production') {
     }),
   ];
 } else {
-  entry = ['webpack-hot-middleware/client'].concat(entry);
   plugins = [
     new webpack.DefinePlugin({
       process: {env: {NODE_ENV: '"development"'}},
     }),
-
-    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
   ];
 }
