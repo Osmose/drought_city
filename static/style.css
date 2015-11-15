@@ -54,7 +54,14 @@ body {
 }
 
 .home {
-  background-color: #d9ff27;
+  background-color: #00d2ff;
+  position: relative;
+  background-image: url(/static/assets/litterbox.svg);
+  background-repeat: no-repeat;
+  background-position: 100px 130px;
+  background-size: 800px;
+  height: 562px;
+  overflow: hidden;
 }
 
 /* 1000 x 562 */
@@ -82,6 +89,26 @@ h1 {
   display: inline-block;
 }
 
+.home img.title {
+  width: 600px;
+}
+
+.home h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 180px;
+  left: 450px;
+}
+
+.home .character {
+  width: 550px;
+  position: absolute;
+  top: 200px;
+  left: 450px;
+}
+
 header {
   background-color: #3e3e3e;
   flex: 0 0 15%;
@@ -107,4 +134,15 @@ header .character {
 
 #playarea {
   flex: 1 1;
+}
+
+#playarea * {
+  background-repeat: no-repeat;
+}
+
+.enemy {
+  width: 400px;
+  top: 0;
+  right: 100px;
+  position: absolute;
 }

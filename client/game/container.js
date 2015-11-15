@@ -10,7 +10,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="wrapper">
+      <div className="game-wrapper">
         <header>
           <section>
             <img className="character" src="/static/assets/cat-protagonist-tabby.svg" />
@@ -25,7 +25,8 @@ export default class App extends Component {
           </section>
         </header>
         <div id="playarea" className="level">
-          <MapApp/>
+          <MapApp />
+          <img className="enemy" src="/static/assets/cat-enemy-purple.svg" />
         </div>
       </div>
     );

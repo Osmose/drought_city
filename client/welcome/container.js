@@ -16,7 +16,9 @@ export default class WelcomeApp extends Component {
 
     return (
       <div className="home">
-        <h1>Drought City</h1>
+        <img src="/static/assets/title.svg" className="title" title="Drought" />
+        <h2>City</h2>
+        <img className="character" src="/static/assets/cat-protagonist-tabby.svg" />
       </div>
     );
   }
